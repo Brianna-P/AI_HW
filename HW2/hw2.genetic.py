@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import random
 
 
-random_seed = 15
+random_seed = 26
 np.random.seed(random_seed)
 random.seed(random_seed)
 mutation_rate = 0.05
@@ -82,6 +82,6 @@ print("Error:", er)
 plt.plot(range(1,len(errors)+1), errors)
 plt.xlabel("Iteration")
 plt.ylabel("er(w)")
-plt.title("Genetic Algorithm")
+plt.title("Genetic Algorithm (with GLOBAL best)")
 plt.savefig("Figure3_GeneticAlgorithm.png") 
 plt.show()
